@@ -1,0 +1,14 @@
+{
+  "properties": [
+    {
+      "name": "sprng.jpa.show-sql",
+      "type": "java.lang.String",
+      "description": "Description for sprng.jpa.show-sql."
+    },
+    {
+      "name": "sprng.jpa.show-sql",
+      "type": "java.lang.String",
+      "description": "Description for sprng.jpa.show-sql."
+    }
+  ]
+}
