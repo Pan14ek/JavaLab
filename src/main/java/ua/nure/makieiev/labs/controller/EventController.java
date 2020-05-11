@@ -24,8 +24,8 @@ import java.util.Optional;
 @RequestMapping("/event")
 public class EventController {
 
-    private ModelMapper modelMapper;
-    private EventService eventService;
+    private final ModelMapper modelMapper;
+    private final EventService eventService;
 
     @Autowired
     public EventController(ModelMapper modelMapper, EventService eventService) {

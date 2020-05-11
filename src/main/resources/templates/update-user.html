@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="#"
+      method="post" th:action="@{/person/update/{id}(id=${personDto.id})}" th:object="${personDto}">
+    <label for="firstName">First name</label>
+    <input id="firstName" placeholder="Your first name" th:field="*{firstName}" type="text">
+    <span th:errors="*{firstName}" th:if="${#fields.hasErrors('firstName')}"></span>
+    <br>
+    <label for="lastName">Last name</label>
+    <input id="lastName" placeholder="Your last name" th:field="*{lastName}" type="text">
+    <span th:errors="*{lastName}" th:if="${#fields.hasErrors('lastName')}"></span>
+    <br>
+    <label for="age">Age</label>
+    <input id="age" placeholder="Your age" th:field="*{age}" type="number">
+    <span th:errors="*{age}" th:if="${#fields.hasErrors('age')}"></span>
+    <br>
+    <label for="gender">Gender</label>
+    <input id="gender" placeholder="Your gender" th:field="*{gender}" type="text">
+    <span th:errors="*{gender}" th:if="${#fields.hasErrors('gender')}"></span>
+    <br>
+    <label for="weight">Weight</label>
+    <input id="weight" placeholder="Your weight" th:field="*{weight}" type="number">
+    <span th:errors="*{weight}" th:if="${#fields.hasErrors('weight')}"></span>
+    <br>
+    <label for="height">Height</label>
+    <input id="height" placeholder="Your height" th:field="*{height}" type="text">
+    <span th:errors="*{height}" th:if="${#fields.hasErrors('height')}"></span>
+    <br>
+    <input type="submit" value="Update User">
+</form>
+
+</body>
+</html>

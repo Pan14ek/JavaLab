@@ -24,8 +24,8 @@ import java.util.Optional;
 @RequestMapping("/company")
 public class CompanyController {
 
-    private ModelMapper modelMapper;
-    private CompanyService companyService;
+    private final ModelMapper modelMapper;
+    private final CompanyService companyService;
 
     @Autowired
     public CompanyController(ModelMapper modelMapper, CompanyService companyService) {
