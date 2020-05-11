@@ -5,3 +5,6 @@ Java Lab , Oleksii Makieiev
 ## Second lab
 Branch Lab-2
 - Spring Data
+## Third lab
+Branch Lab-3
+- Spring MVC with Thymeleaf
